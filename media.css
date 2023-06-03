@@ -1,0 +1,276 @@
+  /* ==================================================================About Page=====Meadia query Of  video heading para================= */
+  @media screen and (max-width: 1007px) {
+    #video_head {
+        width: 537px;
+        height: 551px;
+    }
+
+    #video_head p {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #video_head {
+        width: 441px;
+        height: 339px;
+    }
+
+    #video_head p {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #video_head {
+        width: 330px;
+        height: 270px;
+    }
+
+    #video_head p {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    #video_head {
+        width: 383px;
+        height: 219px;
+    }
+
+    #video_head p {
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #video_head {
+        width: 200px;
+        height: 119px;
+    }
+
+    #video_head p {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+ /* ================================================Meadia Query===About Page How Do You poster ================= */
+
+ @media screen and (max-width: 1528px) {
+    .how_do_you {
+        font-size: 50px;
+    }
+
+    .oneImg_with_side_Content {
+        margin-top: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    .how_do_you {
+        font-size: 40px;
+    }
+
+    .oneImg_with_side_Content {
+        margin-top: 75vh;
+    }
+
+}
+
+
+@media screen and (max-width: 909px) {
+    .how_do_you {
+        font-size: 40px;
+    }
+
+    .oneImg_with_side_Content {
+        margin-top: 60vh;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .how_do_you {
+        font-size: 30px;
+    }
+
+    .oneImg_with_side_Content {
+        margin-top: 55vh;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .how_do_you {
+        font-size: 20px;
+    }
+
+    .oneImg_with_side_Content {
+        margin-top: 30vh;
+    }
+}
+
+
+
+
+
+ /* ==========================================Carrier Video Area media query=================================================== */
+   
+
+ @media screen and (max-width: 1000px) {
+    #carrier_head_con {
+        height: 76vh;
+    }
+
+    .carrier_head_innercon {
+
+        height: 40vh;
+    }
+
+    .head_topic {
+        font-size: 65px;
+    }
+
+    .head_btn {
+        padding: 13px 18px;
+    }
+}
+
+
+@media screen and (max-width: 989px) {
+    #carrier_head_con {
+        height: 70vh;
+    }
+
+    .carrier_head_innercon {
+        height: 45vh;
+    }
+
+    .head_topic {
+        font-size: 52px;
+    }
+
+   
+}
+
+@media screen and (max-width: 785px) {
+    #carrier_head_con {
+        height: 62vh;
+    }
+
+    .carrier_head_innercon {
+        height: 42vh;
+    }
+
+    .head_topic {
+        font-size: 46px;
+    }
+
+    .head_btn {
+        padding: 11px 18px;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    #carrier_head_con {
+        height: 57vh;
+    }
+
+    .carrier_head_innercon {
+        height: 42vh;
+    }
+
+    .head_topic {
+        font-size: 35px;
+    }
+
+    .head_btn {
+        padding: 11px 18px;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    #carrier_head_con {
+        height: 51vh;
+    }
+
+    .carrier_head_innercon {
+        height: 39vh;
+    }
+
+    .head_topic {
+        font-size: 28px;
+    }
+
+    .head_btn {
+        padding: 11px 18px;
+    }
+}
+
+
+@media screen and (max-width: 558px) {
+    #carrier_head_con {
+        height: 43vh;
+    }
+
+    .carrier_head_innercon {
+        height: 38vh;
+    }
+
+    .head_topic {
+        font-size: 22px;
+    }
+
+    .head_btn {
+        padding: 11px 18px;
+    }
+}
+
+
+@media screen and (max-width: 498px) {
+    #carrier_head_con {
+        height: 38vh;
+    }
+
+    .carrier_head_innercon {
+        height: 23vh;
+    }
+
+    .head_topic {
+        font-size: 50px;
+    }
+    .head_para {
+        display: none;
+    }
+
+    .head_btn {
+        padding: 9px 18px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    #carrier_head_con {
+        height: 31vh;
+    }
+
+    .carrier_head_innercon {
+        height: 23vh;
+    }
+
+    .head_topic {
+        font-size: 36px;
+    }
+    .head_para {
+        display: none;
+    }
+
+    .head_btn {
+        padding: 4px 18px;
+    }
+}
