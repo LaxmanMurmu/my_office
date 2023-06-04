@@ -670,7 +670,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "controller.php?type=insert",
+                url: "Controller_carrierForm.php?type=insert",
                 data: $(this).serialize(),
                 success: function(response) {
                     console.log(response); // Display the response in the browser console

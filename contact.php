@@ -114,7 +114,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "controller.php?type=contact_form",
+                url: "Controller_contatUsForm.php?type=contact_form",
                 data: $(this).serialize(),
                 success: function(response) {
                     console.log(response); // Display the response in the browser console

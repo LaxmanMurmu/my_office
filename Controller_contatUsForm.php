@@ -19,8 +19,9 @@ if (isset($_GET['type']) && $_GET['type'] === 'contact_form') {
     );
     $obj->insertData('contact_form', $data);
 }
+
 // Calling getData() to fetch data
-$result = $obj->getData('form_applied', '*', '', 'id', 'DESC');
+$result = $obj->getData('contact_form', '*', '', 'id', 'DESC');
 
 // Convert the result to JSON format
 $jsonData = json_encode($result);
@@ -28,8 +29,6 @@ $jsonData = json_encode($result);
 // Send the JSON response
 header('Content-Type: application/json');
 echo $jsonData;
-
-
 
 
 

@@ -19,11 +19,11 @@ if (isset($_GET['type']) && $_GET['type'] === 'insert') {
         
         
     );
-    $obj->insertData('form_applied', $data);
+    $obj->insertData('carrier', $data);
 }
 
 // Calling getData() to fetch data
-$result = $obj->getData('form_applied', '*', '', 'id', 'DESC');
+$result = $obj->getData('carrier', '*', '', 'id', 'DESC');
 
 // Convert the result to JSON format
 $jsonData = json_encode($result);
@@ -31,10 +31,6 @@ $jsonData = json_encode($result);
 // Send the JSON response
 header('Content-Type: application/json');
 echo $jsonData;
-
-
-
-
 
 
 
