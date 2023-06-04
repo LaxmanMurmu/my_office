@@ -6,6 +6,7 @@ if (isset($_GET['type']) && $_GET['type'] === 'insert') {
     $name = mysqli_real_escape_string($obj->connect(), $_POST['name']);
     $email = mysqli_real_escape_string($obj->connect(), $_POST['email']);
     $phone = mysqli_real_escape_string($obj->connect(), $_POST['phone']);
+    $designation = mysqli_real_escape_string($obj->connect(), $_POST['designation']);
     $address = mysqli_real_escape_string($obj->connect(), $_POST['address']);
 
 
@@ -13,7 +14,9 @@ if (isset($_GET['type']) && $_GET['type'] === 'insert') {
         'name' => $name,
         'email' => $email,
         'phone' => $phone,
+        'designation' => $designation,
         'address' => $address
+        
         
     );
     $obj->insertData('form_applied', $data);
