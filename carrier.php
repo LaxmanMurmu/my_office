@@ -245,8 +245,6 @@
                 padding: 4px 18px;
             }
         }
-
-       
     </style>
 
     <body>
@@ -565,24 +563,26 @@
 
         <!-- ============================================================Simple Style in middle====================================== -->
 
- 
-        <div class="simple_style" style="display: flex; padding: 100px 0px; background-image: url('images/slide3.jpg'); filter: brightness(0.7);">
+
+        <div class="simple_style"
+            style="display: flex; padding: 100px 0px; background-image: url('images/slide3.jpg'); filter: brightness(0.7);">
 
             <div class="box2 container">
-                <h1 class=" mt-3 text-center"  style="color: white; font-weight: bold;">build greater futures through innovation and collective
+                <h1 class=" mt-3 text-center" style="color: white; font-weight: bold;">build greater futures through
+                    innovation and collective
                     knowledge.
                 </h1>
-                
+
             </div>
-        
+
         </div>
-        
+
 
         <!-- ============================================================Form Area====================================== -->
 
 
         <div id="apply_form" class=" py-5" style="background-color: white; display: flex;">
-            <div class="container row py-2"  style="margin: auto;">
+            <div class="container row py-2" style="margin: auto;">
 
                 <div class="form_row col-md-6">
                     <p class="text-dark text- " style="font-size: 40px; font-weight: bold;">Apply Now & be part of
@@ -599,40 +599,45 @@
                 </div>
                 <div class="form_row col-md-6 py-5 px-5"
                     style="border: 2px solid black; box-shadow: 16px 12px 6px; border-radius: 5px;">
-                    <form class="row">
 
-                        <div class="mb-3 col-md-6">
+
+                    <form id="input_form">
+                    <div class="alert alert-success d-none" id="alert" role="alert">
+                        Registered Successfully
+                    </div>
+
+                        <div class="mb-3 col-md-12">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <input name="name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="mb-3 col-md-6">
+                        <div class="mb-3 col-md-12">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input name="email" type="email" class="form-control" id="email"
                                 aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Contact Number</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
+                            <input name="phone" type="text" class="form-control" id="phone"
                                 aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Applied For</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
+                            <input name="designation" type="text" class="form-control" id="designation"
                                 aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                            <textarea name="address" class="form-control" id="address" rows="3"></textarea>
                         </div>
 
 
                         <div class="mb-3 col-md-12">
-                            <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+                            <button type="submit" id="submit" value="submit" name="submit"
+                                class="btn btn-primary">Submit</button>
                         </div>
 
                     </form>
@@ -642,9 +647,46 @@
 
         <?php include "partials/_footer.php"?>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
             </script>
+
+
+<script>
+     $(document).ready(function() { 
+
+        function clearFormFields() {
+            $('#name').val('');
+            $('#email').val('');
+            $('#phone').val('');
+            $('#address').val('');
+        }
+
+          // *************************************************Insert form data*********************************************
+          $("#input_form").submit(function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            $.ajax({
+                type: "POST",
+                url: "controller.php?type=insert",
+                data: $(this).serialize(),
+                success: function(response) {
+                    console.log(response); // Display the response in the browser console
+                    // Reload the table data
+                    clearFormFields(); // Clear the form fields
+                    $('#alert').removeClass('d-none'); // Show the alert message
+                },
+                error: function(xhr, status, error) {
+                    console.log(xhr.responseText); // Display any error message in the browser console
+                }
+            });
+        });
+       });
+
+</script>
+
+
 
     </body>
 

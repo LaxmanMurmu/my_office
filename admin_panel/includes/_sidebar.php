@@ -4,7 +4,7 @@
     <a href="admin.php" class="brand-link">
         <img src="assets/dist/img/logo2.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light"><span style="color:white">Amazon </span><span style="color:orange">Seller</span></span>
+        <span class="brand-text font-weight-light"><span style="color:white">My</span><span style="color:orange"> Office</span></span>
     </a>
 
     <!-- Sidebar -->
@@ -34,6 +34,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -68,32 +69,20 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-shopping-bag"></i>
                         <p>
-                            Category
+                            Registered Users
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
 
                         <li class="nav-item">
-                            <a href="add_category.php" class="nav-link">
+                            <a href="registeredUsers.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add Category</p>
+                                <p>users</p>
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="add_subcategory.php" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add Sub Category</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="view_subcategory.php" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>View Sub Category</p>
-                            </a>
-                        </li>
+                       
                     </ul>
                 </li>
 
@@ -101,7 +90,7 @@
 
 
                 <!-- ===============================================================Products=========================================================== -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tshirt "></i> 
                         <p>
@@ -124,11 +113,11 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
 
 
                 <!-- ===============================================================Orders=========================================================== -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-shopping-cart"></i>
                         <p>
@@ -147,7 +136,7 @@
                         </li>
                     </ul>
                 </li>
-
+ -->
 
 
 
