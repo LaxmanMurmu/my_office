@@ -37,29 +37,36 @@
             <div class="container mt-5" style="max-width: 600px;">
                 <h4 class="" style=" color: gray;">WEBSITE FEEDBACK</h4>
                 <p style="color: gray;">Let us know what you think of the tcs.com experience. We welcome your suggestions, comments, and opinions.</p>
-                <form class="mt-5">
+
+                <!-- form -->
+                <form class="mt-5" id="input_form">
+
+                <div class="alert alert-success d-none" id="alert" role="alert">
+                        Thankyou for contacting us!
+                    </div>
+
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-light">First Name</label>
-                        <input type="email" class="form-control" placeholder="Enter your first name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="firstname" type="text" class="form-control" placeholder="Enter your first name" id="firstname" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-light">Last Name</label>
-                        <input type="email" class="form-control"  placeholder="Enter your last name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="lastname" type="text" class="form-control"  placeholder="Enter your last name" id="lastname" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
-                        <input type="email" class="form-control"  placeholder="Enter your email address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input name="email" type="email" class="form-control"  placeholder="Enter your email address" id="email" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label text-light">How can we help you</label>
-                        <textarea class="form-control"  placeholder="Plese Write Something" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea name="message" class="form-control"  placeholder="Plese Write Something" id="message" rows="3"></textarea>
                       </div>
 
                       <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <input  type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label text-light" for="exampleCheck1">I concern to processsing of my Personal data entered above for the purpose of recording the feedback</label>
                       </div>
 
@@ -67,7 +74,9 @@
                         <p class="text-light">For further details on how your personal data will be processed and how your consent can be managed, refer to the <h5><a style="color: gray;" href=""> TCS Privacy Notice.</a> </h5> ​</p>
                       </div>
 
-                    <button type="submit" style="background-color: rgb(187, 187, 187); border-radius: 30px;" class="btn btn- px-5 py-3">Send</button>
+                    <button type="submit" id="submit" value="submit" style="background-color: rgb(187, 187, 187); border-radius: 30px;" class="btn btn- px-5 py-3">Send</button>
+                  
+
                 </form>
             </div>
         </div>
@@ -80,10 +89,47 @@
 
     </div>
 
+ <!-- *********************************************************SCRIPT*************************************************************** -->
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+
+        
+<script>
+     $(document).ready(function() { 
+
+        function clearFormFields() {
+            $('#firstname').val('');
+            $('#lastname').val('');
+            $('#email').val('');
+            $('#message').val('');
+        }
+
+          // *************************************************Insert form data*********************************************
+          $("#input_form").submit(function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            $.ajax({
+                type: "POST",
+                url: "controller.php?type=contact_form",
+                data: $(this).serialize(),
+                success: function(response) {
+                    console.log(response); // Display the response in the browser console
+                    // Reload the table data
+                    clearFormFields(); // Clear the form fields
+                    $('#alert').removeClass('d-none'); // Show the alert message
+                },
+                error: function(xhr, status, error) {
+                    console.log(xhr.responseText); // Display any error message in the browser console
+                }
+            });
+        });
+       });
+
+</script>
 </body>
 
 </html>

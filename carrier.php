@@ -660,6 +660,7 @@
             $('#name').val('');
             $('#email').val('');
             $('#phone').val('');
+            $('#designation').val('');
             $('#address').val('');
         }
 

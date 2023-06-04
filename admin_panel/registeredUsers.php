@@ -28,6 +28,44 @@ include 'includes/_sidebar.php';
     </div>
     <!-- /.content-header -->
 
+<!-- ==========================================================================START=============================================== -->
+
+    <!-- ========================================Table=============================================== -->
+    <div class="container border pt-3 mt-3">
+    <table id="userTable" class="display">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be dynamically added here*********************************** -->
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
