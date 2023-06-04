@@ -41,7 +41,7 @@
                 <!-- form -->
                 <form class="mt-5" id="input_form">
 
-                <div class="alert alert-success d-none" id="alert" role="alert">
+                <div class="alert alert-danger d-none" id="alert" role="alert">
                         Thankyou for contacting us!
                     </div>
 

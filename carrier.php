@@ -602,16 +602,17 @@
 
 
                     <form id="input_form">
-                    <div class="alert alert-success d-none" id="alert" role="alert">
-                        Registered Successfully
+                    <div class="alert alert-success d-none text-bold" id="alert" role="alert">
+                        Form Submitted Successfully!
                     </div>
 
-                        <div class="mb-3 col-md-12">
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
                             <label for="exampleInputEmail1" class="form-label">Name</label>
                             <input name="name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="mb-3 col-md-12">
+                        <div class="mb-3 col-md-6">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input name="email" type="email" class="form-control" id="email"
                                 aria-describedby="emailHelp">
@@ -636,8 +637,9 @@
 
 
                         <div class="mb-3 col-md-12">
-                            <button type="submit" id="submit" value="submit" name="submit"
-                                class="btn btn-primary">Submit</button>
+                            <button type="submit" id="submit" value="submit" name="submit"class="btn btn-primary col-md-12">Submit</button>
+                        </div>
+
                         </div>
 
                     </form>
