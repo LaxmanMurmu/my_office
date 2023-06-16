@@ -18,5 +18,5 @@ The Home section serves as the landing page for the OfficeWork website. It provi
 The About Us section provides detailed information about the OfficeWork project and the team behind it. It introduces the vision, mission, and goals of the project, along with a brief history and any noteworthy achievements. This section aims to create a connection between users and the creators of the website.
 
 ![Screenshot (11)](https://github.com/LaxmanMurmu/my_office/assets/75252155/24d8f78b-7db4-40f3-a01d-8d5f86cb0458)
-![Screenshot (12)](https://github.com/LaxmanMurmu/my_office/assets/75252155/ec19a2bb-d329-4384-b122-03ab6ca61511)
+![Screenshot (12)](https://github.com/LaxmanMurmu/my_office/assets/75252155/df9c2cae-5f7f-4358-b4f7-9c6a4006d3e0)
 ![Screenshot (13)](https://github.com/LaxmanMurmu/my_office/assets/75252155/52674285-8949-4026-a4fa-98857142644d)
