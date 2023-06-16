@@ -28,3 +28,11 @@ Welcome to my portfolio! This repository showcases my skills, experiences, and p
 ![Screenshot (22)](https://github.com/LaxmanMurmu/my_office/assets/75252155/d4ae7d70-6707-4b39-bc5f-49098aa96404)
 ![Screenshot (23)](https://github.com/LaxmanMurmu/my_office/assets/75252155/4f611064-d12d-4f06-8f80-30cac82840d8)
 ![Screenshot (24)](https://github.com/LaxmanMurmu/my_office/assets/75252155/8c512a38-cfe5-47a7-a489-9880eeb40332)
+
+# Carrier
+
+The Career Opportunities section is dedicated to showcasing available job positions within the OfficeWork organization. It provides a comprehensive list of roles, job descriptions, and requirements. Prospective candidates can learn about the company culture and benefits, as well as how to apply for open positions.
+
+![Screenshot (16)](https://github.com/LaxmanMurmu/my_office/assets/75252155/2bbc347f-7ec9-49eb-967e-d4ddf7fbb062)
+![Screenshot (17)](https://github.com/LaxmanMurmu/my_office/assets/75252155/3fefecfa-78bf-4cb1-a911-1c6ce1308514)
+![Screenshot (18)](https://github.com/LaxmanMurmu/my_office/assets/75252155/b9470b61-7ce0-4c86-9005-fb9efba9533c)
