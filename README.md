@@ -3,7 +3,7 @@ Welcome to the official repository of the OfficeWork website! This repository co
 
 # Sections
 
-#Home
+# Home
 
 The Home section serves as the landing page for the OfficeWork website. It provides an overview of the website's purpose and features, highlighting how it can streamline office work and enhance productivity. Visitors can easily navigate to other sections from here.
 
@@ -12,3 +12,11 @@ The Home section serves as the landing page for the OfficeWork website. It provi
 ![Screenshot (21)](https://github.com/LaxmanMurmu/my_office/assets/75252155/b9f67e85-1de6-41be-b939-6993f8232624)
 
 ![Screenshot (10)](https://github.com/LaxmanMurmu/my_office/assets/75252155/63c15c1a-372a-4882-a1e3-f7da88b574a4)
+
+# About Us
+
+The About Us section provides detailed information about the OfficeWork project and the team behind it. It introduces the vision, mission, and goals of the project, along with a brief history and any noteworthy achievements. This section aims to create a connection between users and the creators of the website.
+
+![Screenshot (11)](https://github.com/LaxmanMurmu/my_office/assets/75252155/24d8f78b-7db4-40f3-a01d-8d5f86cb0458)
+![Screenshot (12)](https://github.com/LaxmanMurmu/my_office/assets/75252155/ec19a2bb-d329-4384-b122-03ab6ca61511)
+![Screenshot (13)](https://github.com/LaxmanMurmu/my_office/assets/75252155/52674285-8949-4026-a4fa-98857142644d)
